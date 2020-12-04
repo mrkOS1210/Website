@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="utf-8">
+<title>Parry's Milkbar and Candy Store</title>
+
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<header>
+	<ul class="header">
+	<a href="index.html"><li class="left"><p class="logo">Parry's Milkbar</p></li></a>
+  	<li class="left"><a href="index.html">Home</a></li>
+  	<li class="left"><a href="order.html">Order</a></li>
+ 
+ 	<li class="left"><a href="about.html">About</a></li>
+	
+	<a class="right" href="account.html"><img id="account" src="images/accounticon.png" alt=""></a>
+	
+	
+
+</ul>
+</header>
+	
+<body>
+	
+	<div id="checkout">
+	<h1>Checkout</h1>
+	<form action="index.html">
+		
+		<h3>Pickup Time</h3>
+		
+		<input type="radio" name="pickup" id="asap" value="ASAP">
+		<label for="asap">ASAP</label>
+		<label for="asap" id="asaphidden" > - Order will be ready in about 5 minutes.</label><br>
+		<input type="radio" name="pickup" id="later" value="later">
+		<label for="later">Later</label>
+		<label for="later" id="laterhidden"> - <input type="time" id="timebox" placeholder=""></label><br>
+		
+		<h3>Card Details</h3>
+		<div id="column1">
+		<h2>Name on Card</h2>
+		<input type="text" class="creditbox" placeholder="John Doe"><br>
+		<h2>Card Number</h2>
+		<input type="text" class="creditbox" placeholder="1234 5678 9012 3456"><br>
+		</div>
+		
+		<div id="column2">
+		<h2>CVV</h2>
+		<input type="text" class="creditbox" placeholder="123"><br>
+		<h2>Expiry Date</h2>
+		<input type="text" class="creditbox" placeholder="20/20"><br>
+			
+		</div>
+		
+		<input type="submit" value="Checkout" id="checkoutbutton">
+		</form>
+	</div>
+	
+	
+	
+	<div id="checkoutproducts">
+	<li>
+		<img src="images/Food/Milkshake.png" alt="">
+		<p>Milkshake</p>
+		<p>$5.00<br><br></p>
+		
+		<h5 class="modify">[Modify Product]</h5>
+		</li>
+	<li>
+		<img src="images/Food/Pancakes.png" alt="">
+		<p>Dutch Mini Pancakes</p>
+		<p>$6.00</p>
+		<h5 class="modify">[Modify Product]</h5>
+		</li>
+	<li>
+		<img src="images/Food/SundaeCropped.png" alt="">
+		<p>Sundae</p>
+		<p>$5.50<br><br></p>
+		<h5 class="modify">[Modify Product]</h5>
+		</li>
+	
+	<h1>Total Amount: $16.50</h1>
+	
+	
+	</div>
+	
+</body>
+	
+<footer class="footer">
+	<p>Parry's Milkbar © <br><br>
+		Phone Number: (02) 9525 3366 <br>
+		Address: 347 Kingsway, Caringbah NSW 2229 </p>
+</footer>
+	
+</html>
